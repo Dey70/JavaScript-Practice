@@ -26,3 +26,21 @@ while (j > 0) {
   j--;
 }
 console.log("Countdown : ", countdown);
+/*  
+3. Write a `do while` loop that prompts a user to enter their favorite tea type until they enter `"stop"`.  
+
+Store each tea type in an array named `teaCollection`.  
+
+*/  
+
+let teaCollection = [];
+let tea = "";
+do {
+  tea = prompt(`Enter your fav tea(type "stop" to finish): `);
+
+  if (tea !== "stop") {
+    teaCollection.push(tea);
+  }
+} while (tea !== "stop");
+
+console.log("Tea Collections: ", teaCollection);
