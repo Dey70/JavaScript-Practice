@@ -44,3 +44,18 @@ do {
 } while (tea !== "stop");
 
 console.log("Tea Collections: ", teaCollection);
+
+/*  
+4. Write a `do while` loop that adds numbers from 1 to 3 and stores the result in a variable named `total`.  
+
+*/
+
+let k = 1;
+let total = 0;
+
+do {
+  total += k;
+  k++;
+} while (k < 4);
+
+console.log("Result: ", total);
