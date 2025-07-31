@@ -12,3 +12,17 @@ while (i <= 5) {
   i++;
 }
 console.log("The sum is : ", sum);
+
+/*  
+2. Write a `while` loop that counts down from 5 to 1 and stores the numbers in an array named `countdown`.  
+
+*/ 
+
+let j = 5;
+let countdown = [];
+
+while (j > 0) {
+  countdown.push(j);
+  j--;
+}
+console.log("Countdown : ", countdown);
