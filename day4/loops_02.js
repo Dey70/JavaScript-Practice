@@ -59,3 +59,17 @@ do {
 } while (k < 4);
 
 console.log("Result: ", total);
+
+/*  
+5. Write a `for` loop that multiplies each element in the array `[2, 4, 6]` by 2 and stores the results in a new array named `multipliedNumbers`.  
+*/  
+
+let arr = [2, 4, 6];
+let multipliedNumbers = [];
+
+for (let l = 0; l <= arr.length; l++) {
+  result = arr[l] * 2;
+  multipliedNumbers.push(result);
+}
+
+console.log("Result: ", multipliedNumbers);
