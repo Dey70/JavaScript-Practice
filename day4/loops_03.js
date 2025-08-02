@@ -144,15 +144,19 @@ let teaCollection = ["earl grey", "green tea", "chai", "oolong tea"];
 
 let availableTeas = [];
 
-teaCollection.forEach(function (teaCollection) {
-  if (teaCollection === "chai") {
+teaCollection.forEach(function (teas) {
+  if (teas === "chai") {
     return;
   }
-  availableTeas.push(teaCollection);
+  availableTeas.push(teas);
 });
 
 console.log("Available Teas: ", availableTeas);
 
+/*
+8. Write a `forEach` loop that iterates through the array `["Berlin", "Tokyo", "Sydney", "Paris"]`.  
 
+- Skip `"Sydney"` and store the other cities in a new array named `traveledCities`.  
+*/
 
 
