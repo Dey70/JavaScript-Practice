@@ -133,5 +133,26 @@ for (let city in worldCities) {
 }
 console.log("Large City with large population: ", largeCities);
 
+/*  
+7. Write a `forEach` loop that iterates through the array `["earl grey", "green tea", "chai", "oolong tea"]`.  
+
+- Stop the loop when `"chai"` is found, and store all previous tea types in an array named `availableTeas`.  
+
+*/  
+
+let teaCollection = ["earl grey", "green tea", "chai", "oolong tea"];
+
+let availableTeas = [];
+
+teaCollection.forEach(function (teaCollection) {
+  if (teaCollection === "chai") {
+    return;
+  }
+  availableTeas.push(teaCollection);
+});
+
+console.log("Available Teas: ", availableTeas);
+
+
 
 
