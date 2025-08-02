@@ -73,3 +73,36 @@ for (let tea of indian_teas) {
 }
 
 console.log("Preferred Tea: ", preferredTeas);
+
+/*  
+5. Use a `for-in` loop to loop through an object containing city populations.  
+
+Stop the loop when the population of `"Berlin"` is found and store all previous cities' populations in a new object named `cityPopulations`.  
+
+let citiesPopulation = {  
+    "London": 8900000,  
+    "New York": 8400000,  
+    "Paris": 2200000,  
+    "Berlin": 3500000};  
+
+*/
+
+let citiesPopulation = {
+  London: 8900000,
+  "New York": 8400000,
+  Paris: 2200000,
+  Berlin: 3500000,
+};
+
+let cityPopulations = [];
+
+for (let key in citiesPopulation) {
+  if (key === "Berlin") {
+    break;
+  }
+  cityPopulations.push(key);
+}
+console.log("City Populations : ", cityPopulations);
+
+
+
