@@ -191,3 +191,24 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log("Double Numbers: ", doubledNumbers);
+
+/*
+10. Use a `for-of` loop to iterate through the array `["chai", "green tea", "black tea", "jasmine tea", "herbal tea"]`
+
+and stop when the length of the current tea name is greater than 10.  
+Store the teas iterated over in an array named `shortTeas`.  
+*/
+
+
+let MyTeas = ["chai", "green tea", "black tea", "jasmine tea", "herbal tea"];
+
+let shortTeas = [];
+
+for (let tea of MyTeas) {
+  if (tea.length > 10) {
+    break;
+  }
+  shortTeas.push(tea);
+}
+
+console.log("Short Teas: ", shortTeas);
