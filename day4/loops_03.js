@@ -94,15 +94,14 @@ let citiesPopulation = {
   Berlin: 3500000,
 };
 
-let cityPopulations = [];
+let cityPopulations = {};
 
 for (let key in citiesPopulation) {
   if (key === "Berlin") {
     break;
   }
-  cityPopulations.push(key);
+  cityPopulations[key] = citiesPopulation[key];
 }
 console.log("City Populations : ", cityPopulations);
-
 
 
