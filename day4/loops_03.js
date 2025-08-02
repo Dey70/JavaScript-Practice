@@ -160,3 +160,14 @@ console.log("Available Teas: ", availableTeas);
 */
 
 
+let Cities = ["Berlin", "Tokyo", "Sydney", "Paris"];
+let traveledCities = [];
+
+Cities.forEach(function (City) {
+  if (City === "Sydney") {
+    return;
+  }
+  traveledCities.push(City);
+});
+
+console.log("Traveled Cities: ", traveledCities);
