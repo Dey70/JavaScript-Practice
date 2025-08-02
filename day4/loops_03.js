@@ -37,3 +37,21 @@ for (let i = 0; i < cities.length; i++) {
 }
 
 console.log("Visited Cites: ", visitedCities);
+
+/*
+3. Use a `for-of` loop to iterate through the array `[1, 2, 3, 4, 5]` and stop when the number `4` is found.
+
+Store the numbers before `4` in an array named `smallNumbers`.
+*/ 
+
+const num = [1, 2, 3, 4, 5];
+let smallNumbers = [];
+
+for (let i of num) {
+  if (i === 4) {
+    break;
+  }
+  smallNumbers.push(i);
+}
+
+console.log("Small Numbers: ", smallNumbers);
