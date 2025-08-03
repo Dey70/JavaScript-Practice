@@ -33,3 +33,18 @@ let calculateTotal = (price, quantity) => {
 };
 let totalCost = calculateTotal(5, 5);
 console.log(totalCost);
+
+/*  
+4. Write a function named `processTeaOrder` that takes another function, `makeTea`, as a parameter and calls it with the argument `"earl grey"`.  
+Return the result of calling `makeTea`.  
+*/  
+
+function makeTea(typeOf) {
+  return "Making " + typeOf;
+}
+function processTeaOrder(CreateTea) {
+  let typeOf = "earl grey";
+  return CreateTea(typeOf);
+}
+
+console.log(processTeaOrder(makeTea));
