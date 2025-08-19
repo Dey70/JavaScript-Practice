@@ -17,6 +17,6 @@ class Calculator{
     
 }
 
-let obj = new Calculator();
+let obj1 = new Calculator();
 console.log(Calculator.add(5,10));
 // console.log(obj.add()); // This will throw an error since add is static
